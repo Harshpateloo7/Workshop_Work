@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Scope</title>
+</head>
+<body>
+    <h1>Var Scope</h1>
+    <script>
+        var name = "Harsh";
+        console.log(name);
+
+        function testVar()
+        {
+            console.log("testVar:"+ name);
+            var nameInFunction = "Patel";
+            name ="Change";
+            console.log("testVarchanged:" +name)
+        }
+        testVar();
+        //console.log(nameInFunction);
+    </script>
+    
+</body>
+</html>
